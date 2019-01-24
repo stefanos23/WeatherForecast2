@@ -24,7 +24,7 @@ public class TemperatureController {
 	}
 
 	@RequestMapping("/weather")
-	public Weather weather(@RequestParam(value = "name", defaultValue = "World") String name) {
+	public Weather weather(@RequestParam(value = "name", defaultValue = "GR") String name) {
 
 		Geonames names = countryRepository.getAxesByCountryIso(name);
 		Country country = names.getCountry();

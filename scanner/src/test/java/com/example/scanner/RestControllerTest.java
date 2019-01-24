@@ -33,7 +33,7 @@ public class RestControllerTest {
 	
 	@Test
     public void greetingShouldReturnDefaultMessage2() throws Exception {
-        assertThat(this.controller.greeting4("GR")).isNotNull();;
+        assertThat(this.controller.weather("GR")).isNotNull();;
     }
 	
 
